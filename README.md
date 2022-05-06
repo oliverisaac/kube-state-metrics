@@ -104,7 +104,7 @@ is more liberal than
 [Prometheus](https://prometheus.io/docs/concepts/data_model/#metric-names-and-labels)
 in terms of allowed characters in label names,
 we automatically convert unsupported characters to underscores.
-For example, `app.kubernetes.io/name` becomes `label_app_kubernetes_io_name`.
+For example, `app.kubernetes.io/app-name` becomes `label_app_kubernetes_io_app_name`.
 
 This conversion can create conflicts when multiple Kubernetes labels like
 `foo-bar` and `foo_bar` would be converted to the same Prometheus label `label_foo_bar`.
